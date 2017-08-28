@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GPSTrack</string>
+    <string name="main_bt_start">Start</string>
+    <string name="main_bt_stop">Stop</string>
+    <string name="main_tv_latitude_title">Latitude</string>
+    <string name="main_tv_longitude_title">Longitude</string>
+    <string name="main_tv_latitude_test">55.75222</string>
+    <string name="main_tv_longitude_test">37.61556</string>
+    <string name="main_tv_altitude_title">Altitude</string>
+    <string name="main_tv_altitude_test">15.00</string>
+
+</resources>

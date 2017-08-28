@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xsonus.gpstrack.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <Button
+        android:id="@+id/bt_start"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/main_bt_start"
+        android:textSize="@dimen/main_tv_lat_lon_text_size"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/bt_stop"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/main_bt_stop"
+        android:textSize="@dimen/main_tv_lat_lon_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/tv_Latitude_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/main_tv_latitude_title"
+        android:textSize="@dimen/main_tv_title_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/tv_longitude_title"
+        app:layout_constraintEnd_toEndOf="@+id/tv_longitude_title" />
+
+    <TextView
+        android:id="@+id/tv_longitude_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/main_tv_longitude_title"
+        android:textSize="@dimen/main_tv_title_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/bt_start"
+        app:layout_constraintEnd_toEndOf="@+id/bt_start"
+        app:layout_constraintStart_toStartOf="@+id/bt_start" />
+
+    <TextView
+        android:id="@+id/tv_Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_tv_latitude_test"
+        android:textSize="@dimen/main_tv_lat_lon_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_Latitude_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_longitude" />
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/main_tv_longitude_test"
+        android:textSize="@dimen/main_tv_lat_lon_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_longitude_title"
+        app:layout_constraintStart_toStartOf="@+id/bt_stop" />
+
+    <TextView
+        android:id="@+id/tv_altitude_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/main_tv_altitude_title"
+        android:textSize="@dimen/main_tv_title_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Latitude_title"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Latitude_title" />
+
+    <TextView
+        android:id="@+id/tv_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_tv_altitude_test"
+        android:textSize="@dimen/main_tv_lat_lon_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_altitude_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_Latitude" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+</android.support.constraint.ConstraintLayout>

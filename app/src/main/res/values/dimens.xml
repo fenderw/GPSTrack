@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_inner_horizontal_margin">10dp</dimen>
+    <dimen name="main_inner_vertical_margin">5dp</dimen>
+    <dimen name="main_tv_title_text_size">16sp</dimen>
+    <dimen name="main_tv_lat_lon_text_size">16sp</dimen>
+</resources>
