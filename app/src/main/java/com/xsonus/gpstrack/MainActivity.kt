@@ -3,8 +3,6 @@ package com.xsonus.gpstrack
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.pm.PackageManager
-import android.location.Location
-import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
@@ -32,7 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var locationManager: LocationManager
     var providerEnabled = false
 
-    val locationListener: LocationListener = object : LocationListener {
+    /*val locationListener: LocationListener = object : LocationListener {
 
         override fun onLocationChanged(p0: Location) {
             tvAltitude.text = FLOAT_FORMATER_M.format(p0.altitude)
@@ -55,7 +53,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             disableButtons()
         }
 
-    }
+    }*/
 
     override fun onClick(v: View) {
         when (v.id) {
